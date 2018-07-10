@@ -1,4 +1,4 @@
-package com.summer.chat.main;
+package com.summer.chat.main.main;
 
 //by summer on 2018-07-09.
 
