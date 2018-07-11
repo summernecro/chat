@@ -19,11 +19,25 @@ public class RegistB extends BaseBean{
 
     private String userSig;
 
+    private String type;
+
     public String getName() {
         return name;
     }
 
     public String getId() {
         return id;
+    }
+
+    public String getPwd() {
+        return pwd;
+    }
+
+    public String getUserSig() {
+        return userSig;
+    }
+
+    public String getType() {
+        return type;
     }
 }

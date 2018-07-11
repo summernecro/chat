@@ -43,6 +43,7 @@
         android:paddingRight="16dp">
 
         <EditText
+            android:text="summer"
             android:id="@+id/username"
             android:layout_width="fill_parent"
             android:layout_height="50dp"

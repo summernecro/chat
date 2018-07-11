@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="item_conversation"
+            type="com.summer.chat.main.conversation.ConversationBean" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@color/color_grey_300"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+
+        <TextView
+            android:id="@+id/tv_text"
+            tools:text="1"
+            android:text="@{item_conversation.name}"
+            android:textSize="19sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

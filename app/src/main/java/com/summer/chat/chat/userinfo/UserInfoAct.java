@@ -11,6 +11,7 @@ import com.android.lib.constant.ValueConstant;
 import com.summer.chat.R;
 import com.summer.chat.account.regist.RegistB;
 import com.summer.chat.chat.chat.ChatAct;
+import com.tencent.imsdk.TIMConversationType;
 
 import butterknife.OnClick;
 
@@ -36,7 +37,7 @@ public class UserInfoAct extends BaseUIActivity<UserInfoUIOpe,UserInfoDAOpe,User
 
                 break;
             case R.id.btn_chat:
-                ChatAct.goTo(this,getP().getV().getRegistB());
+                ChatAct.goTo(this,getP().getV().getRegistB().getId(), TIMConversationType.C2C);
                 break;
         }
     }

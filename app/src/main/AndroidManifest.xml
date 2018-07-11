@@ -27,7 +27,7 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/AppBaseTheme" >
+        android:theme="@style/AppppBaseTheme" >
 
     <activity
         android:name=".account.login.LoginAct"
@@ -73,10 +73,8 @@
 
         <activity android:name=".chat.chat.ChatAct"
             android:launchMode="singleTask"
-            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
-            android:exported="true"
-            android:windowSoftInputMode="adjustPan|stateHidden"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
 
 
 

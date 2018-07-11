@@ -39,6 +39,8 @@ import com.tencent.imsdk.ext.sns.TIMFriendshipProxyListener;
 import com.tencent.imsdk.ext.sns.TIMUserConfigSnsExt;
 import com.tencent.qalsdk.QALSDKManager;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.util.List;
 
 import tencent.tls.platform.TLSAccountHelper;
@@ -236,6 +238,7 @@ public class ChatInit {
                         }
                     }
                 }
+                EventBus.getDefault().post(msgs);
                 return true;
             }
         });
